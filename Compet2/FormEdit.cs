@@ -31,7 +31,7 @@ namespace Compet2
                 textBox_pass.Text = dr["m_pass"].ToString();
                 if (dr["m_phone"].ToString() != "")
                 {
-                    textBox_phone.Text = "0" + dr["m_phone"].ToString();
+                    textBox_phone.Text = dr["m_phone"].ToString();
                 } else
                 {
                     textBox_phone.Text = dr["m_phone"].ToString();

@@ -34,13 +34,11 @@ namespace Compet2
                 dataGridView1.Rows[i].Cells["number"].Value = i + 1;
                 if (dr["m_phone"].ToString() != "")
                 {
-
-                    dataGridView1.Rows[i].Cells["m_phone_1"].Value = "0" + dr["m_phone"];
+                    dataGridView1.Rows[i].Cells["m_phone_1"].Value = dr["m_phone"];
                 }
                 else
                 {
                     dataGridView1.Rows[i].Cells["m_phone_1"].Value = dr["m_phone"];
-
                 }
                 i++;
             }
@@ -124,7 +122,7 @@ namespace Compet2
                     if (dr["m_phone"].ToString() != "")
                     {
 
-                        dataGridView1.Rows[i].Cells["m_phone_1"].Value = "0" + dr["m_phone"];
+                        dataGridView1.Rows[i].Cells["m_phone_1"].Value = dr["m_phone"];
                     }
                     else
                     {
